@@ -27,5 +27,5 @@ long int triangular(int n)
 
 void pb11()
 {
-    
+    std::cout << "PB11 : not working yet... SAD!" << std::endl;
 }
