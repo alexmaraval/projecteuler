@@ -2,7 +2,7 @@
 //  pb11.hpp
 //  project_euler_cpp
 //
-//  Created by Alexandre Maraval on 15.09.17.
+//  Created by Alexandre Maraval on 24.09.17.
 //  Copyright © 2017 Alexandre Maraval. All rights reserved.
 //
 
@@ -11,9 +11,11 @@
 
 #include <stdio.h>
 #include <iostream>
+#include <vector>
+#include <math.h>
 
-int nb_div(long int n);
-long int triangular(int n);
+int maxel(std::vector<int> &vec);
+void print(std::vector<int> &vec);
 void pb11();
 
 
