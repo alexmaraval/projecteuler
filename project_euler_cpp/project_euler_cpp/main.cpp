@@ -18,6 +18,7 @@
 #include "pb10.hpp"
 #include "pb11.hpp"
 #include "pb12.hpp"
+#include "pb13.hpp"
 #include "pb137.hpp"
 
 int main(int argc, const char * argv[]) {
@@ -33,9 +34,8 @@ int main(int argc, const char * argv[]) {
     //pb9();
     //pb10();
     //pb11();
-    std::cout << nb_div(5984) << " " << nb_div2(5984) << std::endl;
-    std::cout << nb_div(12375) << " " << nb_div2(12375)  << std::endl;
-    pb12();
+    //pb12();
+    pb13();
     
     //std::cout << nb_div(triangular(10000)) << std::endl;
     
