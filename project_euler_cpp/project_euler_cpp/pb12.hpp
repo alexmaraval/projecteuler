@@ -13,7 +13,6 @@
 #include <iostream>
 
 int nb_div(long int n);
-long int triangular(int n);
 void pb12();
 
 

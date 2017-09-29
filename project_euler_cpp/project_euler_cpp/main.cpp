@@ -33,6 +33,9 @@ int main(int argc, const char * argv[]) {
     //pb9();
     //pb10();
     //pb11();
+    std::cout << nb_div(5984) << " " << nb_div2(5984) << std::endl;
+    std::cout << nb_div(12375) << " " << nb_div2(12375)  << std::endl;
+    pb12();
     
     //std::cout << nb_div(triangular(10000)) << std::endl;
     
