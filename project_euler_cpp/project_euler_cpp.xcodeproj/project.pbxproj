@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		AC4A12601F77E219001EFBE6 /* pb11.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AC4A125E1F77E219001EFBE6 /* pb11.cpp */; };
+		AC4A12631F7E7AE5001EFBE6 /* pb13.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AC4A12611F7E7AE5001EFBE6 /* pb13.cpp */; };
 		AC6919DB1F69A9C600D781B8 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AC6919DA1F69A9C600D781B8 /* main.cpp */; };
 		AC6919E31F69A9E900D781B8 /* pb1.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AC6919E11F69A9E900D781B8 /* pb1.cpp */; };
 		AC6919E61F69AAFA00D781B8 /* pb2.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AC6919E41F69AAFA00D781B8 /* pb2.cpp */; };
@@ -38,6 +39,8 @@
 /* Begin PBXFileReference section */
 		AC4A125E1F77E219001EFBE6 /* pb11.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = pb11.cpp; sourceTree = "<group>"; };
 		AC4A125F1F77E219001EFBE6 /* pb11.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = pb11.hpp; sourceTree = "<group>"; };
+		AC4A12611F7E7AE5001EFBE6 /* pb13.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = pb13.cpp; sourceTree = "<group>"; };
+		AC4A12621F7E7AE5001EFBE6 /* pb13.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = pb13.hpp; sourceTree = "<group>"; };
 		AC6919D71F69A9C600D781B8 /* project_euler_cpp */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = project_euler_cpp; sourceTree = BUILT_PRODUCTS_DIR; };
 		AC6919DA1F69A9C600D781B8 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		AC6919E11F69A9E900D781B8 /* pb1.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = pb1.cpp; sourceTree = "<group>"; };
@@ -121,6 +124,8 @@
 				AC4A125F1F77E219001EFBE6 /* pb11.hpp */,
 				ACF57AF21F6B4831006C3527 /* pb12.cpp */,
 				ACF57AF31F6B4831006C3527 /* pb12.hpp */,
+				AC4A12611F7E7AE5001EFBE6 /* pb13.cpp */,
+				AC4A12621F7E7AE5001EFBE6 /* pb13.hpp */,
 				ACF57AEF1F6B3298006C3527 /* pb137.cpp */,
 				ACF57AF01F6B3298006C3527 /* pb137.hpp */,
 			);
@@ -192,6 +197,7 @@
 				AC6919F21F6A8D9F00D781B8 /* pb6.cpp in Sources */,
 				AC6919DB1F69A9C600D781B8 /* main.cpp in Sources */,
 				AC6919EF1F6A8AEB00D781B8 /* pb5.cpp in Sources */,
+				AC4A12631F7E7AE5001EFBE6 /* pb13.cpp in Sources */,
 				AC6919E31F69A9E900D781B8 /* pb1.cpp in Sources */,
 				AC4A12601F77E219001EFBE6 /* pb11.cpp in Sources */,
 				AC6919FE1F6AB51600D781B8 /* pb10.cpp in Sources */,
