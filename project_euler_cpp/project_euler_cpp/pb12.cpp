@@ -7,25 +7,31 @@
 //
 
 #include "pb12.hpp"
+
 int nb_div(long int n)
 {
-    int cnt = 0;
-    for(long int i=1; i<=n; i++)
+    if (n%2 == 0){n = n/2;}
+    int div = 1;
+    for (int i=2; i<=n; i++)
     {
         if(n%i == 0)
         {
-            cnt++;
+            div++;
         }
     }
-    return cnt;
-}
-
-long int triangular(int n)
-{
-    return (0.5*n*(n+1));
+    return div;
 }
 
 void pb12()
 {
-    std::cout << "PB11 : not working yet... SAD! Also so slow..." << std::endl;
+    long int n = 1;
+    int divn = nb_div(n);
+    int divnp1 = nb_div(n+1);
+    while(divn * divnp1 <= 500)
+    {
+        n++;
+        divn = divnp1;
+        divnp1 = nb_div(n+1);
+    }
+    std::cout << "PB12 : first triangular number with 500 multiplicators is " << n * (n+1) * 0.5 << std::endl;
 }
