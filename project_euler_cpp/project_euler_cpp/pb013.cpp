@@ -1,14 +1,14 @@
 //
-//  pb13.cpp
+//  pb013.cpp
 //  project_euler_cpp
 //
 //  Created by Alexandre Maraval on 29.09.17.
 //  Copyright © 2017 Alexandre Maraval. All rights reserved.
 //
 
-#include "pb13.hpp"
+#include "pb013.hpp"
 
-void pb13()
+void pb013()
 {
     
     std::vector<std::string> numbers = {

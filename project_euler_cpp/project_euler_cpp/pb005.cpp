@@ -1,13 +1,13 @@
 //
-//  pb5.cpp
+//  pb005.cpp
 //  project_euler_cpp
 //
 //  Created by Alexandre Maraval on 14.09.17.
 //  Copyright © 2017 Alexandre Maraval. All rights reserved.
 //
 
-#include "pb5.hpp"
-void pb5()
+#include "pb005.hpp"
+void pb005()
 {
     int n = 1*2*3*5*7*11*13*17*19;
     n = n*2*2*2*3;

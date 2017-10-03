@@ -1,12 +1,12 @@
 //
-//  pb12.cpp
+//  pb012.cpp
 //  project_euler_cpp
 //
 //  Created by Alexandre Maraval on 15.09.17.
 //  Copyright © 2017 Alexandre Maraval. All rights reserved.
 //
 
-#include "pb12.hpp"
+#include "pb012.hpp"
 
 int nb_div(long int n)
 {
@@ -22,7 +22,7 @@ int nb_div(long int n)
     return div;
 }
 
-void pb12()
+void pb012()
 {
     long int n = 1;
     int divn = nb_div(n);

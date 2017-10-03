@@ -1,12 +1,12 @@
 //
-//  pb4.cpp
+//  pb004.cpp
 //  project_euler_cpp
 //
 //  Created by Alexandre Maraval on 14.09.17.
 //  Copyright © 2017 Alexandre Maraval. All rights reserved.
 //
 
-#include "pb4.hpp"
+#include "pb004.hpp"
 
 void int_to_vec(int n, std::vector<int> &vec)
 {

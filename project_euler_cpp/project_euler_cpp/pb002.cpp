@@ -1,14 +1,14 @@
 //
-//  pb2.cpp
+//  pb002.cpp
 //  project_euler_cpp
 //
 //  Created by Alexandre Maraval on 13.09.17.
 //  Copyright © 2017 Alexandre Maraval. All rights reserved.
 //
 
-#include "pb2.hpp"
+#include "pb002.hpp"
 
-void pb2(int n)
+void pb002(int n)
 {
     long int sum = 2;
     long int fiba = 1;

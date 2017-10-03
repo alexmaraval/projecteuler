@@ -1,12 +1,12 @@
 //
-//  pb11.cpp
+//  pb011.cpp
 //  project_euler_cpp
 //
 //  Created by Alexandre Maraval on 24.09.17.
 //  Copyright © 2017 Alexandre Maraval. All rights reserved.
 //
 
-#include "pb11.hpp"
+#include "pb011.hpp"
 
 int maxel(std::vector<int> &vec)
 {
@@ -27,7 +27,7 @@ void print(std::vector<int> &v)
     std::cout << std::endl;
 }
 
-void pb11()
+void pb011()
 {
     int grid[20][20] =
     {

@@ -1,12 +1,12 @@
 //
-//  pb10.cpp
+//  pb010.cpp
 //  project_euler_cpp
 //
 //  Created by Alexandre Maraval on 14.09.17.
 //  Copyright © 2017 Alexandre Maraval. All rights reserved.
 //
 
-#include "pb10.hpp"
+#include "pb010.hpp"
 void eratos1(std::vector<long int> &v, long int n)
 {
     // create the array of all integers
@@ -41,7 +41,7 @@ void print_vec(std::vector<long int> v)
     std::cout << std::endl;
 }
 
-void pb10()
+void pb010()
 {
     long int sum = 0;
     std::vector<long int> v;
