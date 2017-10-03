@@ -6,38 +6,38 @@
 //  Copyright © 2017 Alexandre Maraval. All rights reserved.
 //
 
-#include "pb1.hpp"
-#include "pb2.hpp"
-#include "pb3.hpp"
-#include "pb4.hpp"
-#include "pb5.hpp"
-#include "pb6.hpp"
-#include "pb7.hpp"
-#include "pb8.hpp"
-#include "pb9.hpp"
-#include "pb10.hpp"
-#include "pb11.hpp"
-#include "pb12.hpp"
-#include "pb13.hpp"
+#include "pb001.hpp"
+#include "pb002.hpp"
+#include "pb003.hpp"
+#include "pb004.hpp"
+#include "pb005.hpp"
+#include "pb006.hpp"
+#include "pb007.hpp"
+#include "pb008.hpp"
+#include "pb009.hpp"
+#include "pb010.hpp"
+#include "pb011.hpp"
+#include "pb012.hpp"
+#include "pb013.hpp"
+#include "pb014.hpp"
 #include "pb137.hpp"
 
 int main(int argc, const char * argv[]) {
     
-    //pb1();
-    //pb2(4000000);
-    //pb3(600851475143);
-    //pb4();
-    //pb5();
-    //pb6();
-    //pb7();
-    //pb8();
-    //pb9();
-    //pb10();
-    //pb11();
-    //pb12();
-    pb13();
-    
-    //std::cout << nb_div(triangular(10000)) << std::endl;
+//    pb001();
+//    pb002(4000000);
+//    pb003(600851475143);
+//    pb004();
+//    pb005();
+//    pb006();
+//    pb007();
+//    pb008();
+//    pb009();
+//    pb010();
+//    pb011();
+//    pb012();
+//    pb013();
+//    pb014();
     
     //pb137();
     

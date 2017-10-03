@@ -1,12 +1,12 @@
 //
-//  pb7.cpp
+//  pb007.cpp
 //  project_euler_cpp
 //
 //  Created by Alexandre Maraval on 14.09.17.
 //  Copyright © 2017 Alexandre Maraval. All rights reserved.
 //
 
-#include "pb7.hpp"
+#include "pb007.hpp"
 
 bool isprime(long int n)
 {
@@ -17,7 +17,7 @@ bool isprime(long int n)
     return true;
 }
 
-void pb7()
+void pb007()
 {
     int counter = 0;
     long int i = 2;

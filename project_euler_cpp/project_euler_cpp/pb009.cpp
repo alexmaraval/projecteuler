@@ -1,12 +1,12 @@
 //
-//  pb9.cpp
+//  pb009.cpp
 //  project_euler_cpp
 //
 //  Created by Alexandre Maraval on 14.09.17.
 //  Copyright © 2017 Alexandre Maraval. All rights reserved.
 //
 
-#include "pb9.hpp"
+#include "pb009.hpp"
 bool istriplet(int a, int b, int c)
 {
     if(a*a + b*b == c*c)
@@ -16,7 +16,7 @@ bool istriplet(int a, int b, int c)
     return false;
 }
 
-void pb9()
+void pb009()
 {
     for(int i=0; i<1000; i++)
     {

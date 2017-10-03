@@ -1,13 +1,13 @@
 //
-//  pb6.cpp
+//  pb006.cpp
 //  project_euler_cpp
 //
 //  Created by Alexandre Maraval on 14.09.17.
 //  Copyright © 2017 Alexandre Maraval. All rights reserved.
 //
 
-#include "pb6.hpp"
-void pb6()
+#include "pb006.hpp"
+void pb006()
 {
     long int sumsq = 0;
     long int sqsum = 0;
