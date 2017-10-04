@@ -13,6 +13,7 @@
 #include <iostream>
 #include <vector>
 
+void print_vec(std::vector<long int> &v);
 void eratos1(std::vector<long int> &v, long int n);
 void pb010();
 

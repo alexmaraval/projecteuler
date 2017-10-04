@@ -1,20 +1,20 @@
 //
-//  pb201.hpp
+//  pb015.hpp
 //  project_euler_cpp
 //
 //  Created by Alexandre Maraval on 04.10.17.
 //  Copyright © 2017 Alexandre Maraval. All rights reserved.
 //
 
-#ifndef pb201_hpp
-#define pb201_hpp
+#ifndef pb015_hpp
+#define pb015_hpp
 
 #include <stdio.h>
 #include <iostream>
 #include <vector>
+#include <cmath>
 
-void print_vec(std::vector<long int> &v);
+long int nb_paths(int n);
+void pb015();
 
-void pb201();
-
-#endif /* pb201_hpp */
+#endif /* pb015_hpp */
