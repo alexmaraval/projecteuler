@@ -7,6 +7,7 @@
 //
 
 #include "pb010.hpp"
+
 void eratos1(std::vector<long int> &v, long int n)
 {
     // create the array of all integers
@@ -30,15 +31,6 @@ void eratos1(std::vector<long int> &v, long int n)
             }
         }
     }
-}
-
-void print_vec(std::vector<long int> v)
-{
-    for(long int i=0; i<v.size(); i++)
-    {
-        std::cout << v[i] << " ";
-    }
-    std::cout << std::endl;
 }
 
 void pb010()
