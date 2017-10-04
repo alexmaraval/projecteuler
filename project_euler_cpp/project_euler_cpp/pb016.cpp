@@ -49,7 +49,7 @@ std::string manual_sum(const std::string &a, const std::string &b)
 }
 
 
-std::string manual_prod(const std::string &a, const std::string &b)
+std::string manual_prod(const std::string &a, const std::string &b) // need to finish
 {
     std::string prod = "";                               // result of the product
     std::string _a = a, _b = b;                         // temporary copies of arguments
@@ -115,9 +115,9 @@ bigint bigint::operator+(const bigint &b)
 }
 
 
-bigint bigint::operator*(const bigint &b)
+bigint bigint::operator*(const bigint &b) // need to finish
 {
-    
+    return b;
 }
 
 
