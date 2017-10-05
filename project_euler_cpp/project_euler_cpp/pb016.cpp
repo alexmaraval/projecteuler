@@ -16,31 +16,31 @@
 
 std::string manual_sum(const std::string &a, const std::string &b)
 {
-    std::string sum = "";                               // result of the sum
-    std::string _a = a, _b = b;                         // temporary copies of arguments
-    int s = 0, d = 0, r = 0;                            // temporary sum, digit and eventual reminder
+    std::string sum = "";                                   // result of the sum
+    std::string _a = a, _b = b;                             // temporary copies of arguments
     
-    while(_a.size() < _b.size())                        // adjust size of _a
+    while(_a.size() < _b.size())                            // adjust size of _a
     {
         _a = "0" + _a;
     }
-    while(_a.size() > _b.size())                        // adjust size of _b
+    while(_a.size() > _b.size())                            // adjust size of _b
     {
         _b = "0" + _b;
     }
     
-    _a = "0" + _a;                                      // add one 0 in front of both _a and _b in case we have a
-    _b = "0" + _b;                                      // remainder at the last iteration of the following loop
+    _a = "0" + _a;                                          // add one 0 in front of both _a and _b in case we have a
+    _b = "0" + _b;                                          // remainder at the last iteration of the following loop
+    int s = 0, d = 0, r = 0;                                // temporary sum, digit and eventual reminder
     
     for(unsigned long i = _a.size(); i>0; i--)
     {
-        s = _a[i-1] + _b[i-1] + r - 2*48;               // sum of digits in column i plus remainder of previous sum, in [0,19]
-        d = s%10;                                       // result digit(s)
+        s = (_a[i-1] - '0') + (_b[i-1] - '0') + r;          // sum of digits in column i plus remainder of previous sum, in [0,19]
+        d = s%10;                                           // result digit(s)
         sum = std::to_string(d) + sum;
-        r = (s-d)/10;                                   // remainder
+        r = (s-d)/10;                                       // remainder
     }
     
-    if (sum[0] == '0')                                  // remove the useless occasional "0" in front of the number
+    if (sum[0] == '0')                                      // remove the useless occasional "0" in front of the number
     {
         sum.erase(0,1);
     }
@@ -49,38 +49,57 @@ std::string manual_sum(const std::string &a, const std::string &b)
 }
 
 
-std::string manual_prod(const std::string &a, const std::string &b) // need to finish
+std::string manual_prod(const std::string &a, const std::string &b)
 {
-    std::string prod = "";                               // result of the product
-    std::string _a = a, _b = b;                         // temporary copies of arguments
-    int s = 0, d = 0, r = 0;                            // temporary prod, digit and eventual reminder
+    std::string prod = "";                                  // result of the product
+    std::string sum = "";
+    std::string _a = a, _b = b;                             // temporary copies of arguments
     
-    while(_a.size() < _b.size())                        // adjust size of _a
+    if(_a.size() > _b.size())                               // exchange _a and _b so that _a is always the smallest
+    {
+        std::string _c = _b;
+        _b = _a;
+        _a = _c;
+    }
+    
+    while(_a.size() < _b.size())                            // adjust size of _a filling with zeros to reach size of _b
     {
         _a = "0" + _a;
     }
-    while(_a.size() > _b.size())                        // adjust size of _b
-    {
-        _b = "0" + _b;
-    }
     
-    _a = "0" + _a;                                      // add one 0 in front of both _a and _b in case we have a
-    _b = "0" + _b;                                      // remainder at the last iteration of the following loop
+    _a = "0" + _a;                                          // add one 0 in front of both _a and _b in case we have a
+    _b = "0" + _b;                                          // remainder at the last iteration of the following loop
+    int p = 0, d = 0, r = 0;                                // temporary prod, digit and eventual reminder
     
     for(unsigned long i = _a.size(); i>0; i--)
     {
-        s = _a[i-1] + _b[i-1] + r - 2*48;               // sum of digits in column i plus remainder of previous sum, in [0,19]
-        d = s%10;                                       // result digit(s)
-        prod = std::to_string(d) + prod;
-        r = (s-d)/10;                                   // remainder
+        if(i == _a.size() - a.size()) {break;}              // no need to continue the loop when we reach the part of _a composed of only 0
+        
+        if(_a[i-1] == '0')                                  // if there is a 0 at the end or in the middle of _a no need to enter the loop
+        {
+            sum = "0" + sum;
+        }
+        else
+        {
+            for(unsigned long j = _a.size(); j>0; j--)
+            {
+                p = (_a[i-1] - '0') * (_b[j-1] - '0') + r;  // product of digits in column i plus remainder of previous sum, in [0,82]
+                d = p%10;                                   // result digit(s)
+                prod = std::to_string(d) + prod;
+                r = (p-d)/10;                               // remainder
+            }
+            sum = manual_sum(sum, prod);
+        }
+        prod.clear();
+        prod = std::string(_a.size()-i+1, '0');
     }
     
-    if (prod[0] == '0')                                  // remove the useless occasional "0" in front of the number
+    while (sum[0] == '0')                                   // remove the useless occasional "0" in front of the number
     {
-        prod.erase(0,1);
+        sum.erase(0,1);
     }
     
-    return prod;
+    return sum;
 }
 
 
@@ -107,6 +126,14 @@ bigint::bigint(std::string num){ this->_number = num;}
 
 
 // ----------------------------------------------------------
+// ---------------------- GET FUNCTION ----------------------
+// ----------------------------------------------------------
+std::string bigint::get_str_num()
+{
+    return (this->_number);
+}
+
+// ----------------------------------------------------------
 // ----------------------- OPERATORS ------------------------
 // ----------------------------------------------------------
 bigint bigint::operator+(const bigint &b)
@@ -115,9 +142,9 @@ bigint bigint::operator+(const bigint &b)
 }
 
 
-bigint bigint::operator*(const bigint &b) // need to finish
+bigint bigint::operator*(const bigint &b)
 {
-    return b;
+    return bigint(manual_prod(this->_number,b._number));
 }
 
 
@@ -143,8 +170,31 @@ bigint &bigint::operator= (const std::string &s)
     return *this;
 };
 
+// ----------------------------------------------------------
+// ------------------- OPERATORS WITH INT -------------------
+// ----------------------------------------------------------
+bigint bigint::operator+(const int &n)
+{
+    return bigint(manual_sum(this->_number, std::to_string(n)));
+}
 
 
+bigint bigint::operator*(const int &n)
+{
+    return bigint(manual_prod(this->_number,std::to_string(n)));
+}
+
+
+int bigint::digit_sum()
+{
+    int dsum = 0;
+    
+    for(int i = 0; i<_number.size(); i++)
+    {
+        dsum += _number[i] - '0';
+    }
+    return dsum;
+}
 
 // --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 // --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
@@ -154,15 +204,13 @@ bigint &bigint::operator= (const std::string &s)
 
 void pb016()
 {
-    std::string n = "1";
+    bigint n("2");
     
-    for (int i=1; i<=100; i++)
+    std::cout << "2^1 = " << n << "." << std::endl;
+    for (int i=2; i<=1000; i++)
     {
-        for (int j=1; j<=i; j++)
-        {
-            //n = n*2;
-        }
-        std::cout << "2^" << i << " = " << n << std::endl;
-        n = 1;
+        n = n * 2;
+        //std::cout << "sum of digits of 2^" << i << " = " << n.digit_sum() << std::endl;
     }
+    std::cout << "PB016: sum of digits of 2^100 = " << n.digit_sum() << std::endl;
 }

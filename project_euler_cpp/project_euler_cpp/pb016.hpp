@@ -29,6 +29,9 @@ public:
     bigint(std::string num = "0");
     ~bigint(){};
     
+    // get function
+    std::string get_str_num();
+    
     // operators bigint with bigint
     bigint operator+(const bigint &b);
     bigint operator*(const bigint &b);
@@ -38,9 +41,14 @@ public:
     bigint &operator= (const std::string &s);
     
     // operators bigint with int
+    bigint operator+(const int &n);
+    bigint operator*(const int &n);
+    
     // operators bigint with long int
     // operators bigint with long long int
-
+    
+    // methods
+    int digit_sum();    // for solution to PB016
 };
 
 void pb016();
