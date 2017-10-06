@@ -14,9 +14,6 @@
 #include <string>
 #include <cmath>
 
-std::string manual_sum(const std::string &a, const std::string &b);
-std::string manual_prod(const std::string &a, const std::string &b);
-
 class bigint {
     
     friend std::ostream &operator<< (std::ostream &os, const bigint &n);
@@ -32,17 +29,38 @@ public:
     // get function
     std::string get_str_num();
     
-    // operators bigint with bigint
-    bigint operator+(const bigint &b);
-    bigint operator*(const bigint &b);
+    // logical operators bigint with bigint
+    bool operator==(const bigint &b) const;
+    bool operator<(const bigint &b) const;
+    bool operator>(const bigint &b) const;
+    bool operator<=(const bigint &b) const;
+    bool operator>=(const bigint &b) const;
+    
+    // arithmetic operators bigint with bigint
+    bigint operator+(const bigint &b) const;
+    bigint operator-(const bigint &b) const;
+    bigint operator*(const bigint &b) const;
+    bigint operator^(const bigint &b) const;
+    
+    // unilateral operator
+    bigint operator-() const;
+    bigint operator+() const;
     
     // assignment and conversion
     bigint &operator= (const bigint &b);
     bigint &operator= (const std::string &s);
+    bigint &operator++();
+    bigint &operator++(int);
+    bigint &operator--();
+    bigint &operator--(int);
+    bigint &operator+=(const bigint &b);
+    bigint &operator-=(const bigint &b);
+    bigint &operator*=(const bigint &b);
     
     // operators bigint with int
-    bigint operator+(const int &n);
-    bigint operator*(const int &n);
+    bigint operator+(const int &n) const;
+    bigint operator-(const int &n) const;
+    bigint operator*(const int &n) const;
     
     // operators bigint with long int
     // operators bigint with long long int
