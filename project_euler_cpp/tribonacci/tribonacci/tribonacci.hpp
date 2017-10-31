@@ -13,8 +13,10 @@
 #include <iostream>
 #include <vector>
 #include <ctime>
+#include "big.hpp"
 
 long long int recursive_tribonacci(int n);
 long long int iterative_tribonacci(int n);
+bigint big_iterative_tribonacci(int n);
 
 #endif /* tribonacci_hpp */

@@ -1,15 +1,14 @@
 //
-//  big_class.hpp
-//  big
+//  big.hpp
+//  tribonacci
 //
-//  Created by Alexandre Maraval on 06.10.17.
+//  Created by Alexandre Maraval on 31.10.17.
 //  Copyright © 2017 Alexandre Maraval. All rights reserved.
 //
 
-#ifndef big_class_hpp
-#define big_class_hpp
+#ifndef big_hpp
+#define big_hpp
 
-#include <stdio.h>
 #include <stdio.h>
 #include <iostream>
 #include <string>
@@ -99,4 +98,4 @@ public:
 };
 
 
-#endif /* big_class_hpp */
+#endif /* big_hpp */

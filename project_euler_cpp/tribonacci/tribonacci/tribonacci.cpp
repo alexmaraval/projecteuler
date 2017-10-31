@@ -30,3 +30,22 @@ long long int iterative_tribonacci(int n)
     }
     return(t[2]);
 }
+
+bigint big_iterative_tribonacci(int n)
+{
+    std::vector<bigint> t;
+    t.push_back(bigint("1"));
+    t.push_back(bigint("1"));
+    t.push_back(bigint("2"));
+    if(n == 1 or n == 2) {return t[0];}
+    if(n == 3) {return t[2];}
+    
+    for(int i=4; i<=n; i++)
+    {
+        bigint t1 = t[2], t0 = t[1];
+        t[2] = t[0] + t[1] + t[2];
+        t[1] = t1;
+        t[0] = t0;
+    }
+    return(t[2]);
+}

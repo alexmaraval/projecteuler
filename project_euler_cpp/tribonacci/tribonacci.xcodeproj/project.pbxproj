@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		AC4122D91FA8D487006D0D4A /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AC4122D81FA8D487006D0D4A /* main.cpp */; };
 		AC4122E11FA8D4A7006D0D4A /* tribonacci.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AC4122DF1FA8D4A7006D0D4A /* tribonacci.cpp */; };
+		AC4E4ED81FA8DFEB0017E637 /* big.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AC4E4ED61FA8DFEB0017E637 /* big.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -28,6 +29,8 @@
 		AC4122D81FA8D487006D0D4A /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		AC4122DF1FA8D4A7006D0D4A /* tribonacci.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = tribonacci.cpp; sourceTree = "<group>"; };
 		AC4122E01FA8D4A7006D0D4A /* tribonacci.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = tribonacci.hpp; sourceTree = "<group>"; };
+		AC4E4ED61FA8DFEB0017E637 /* big.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = big.cpp; sourceTree = "<group>"; };
+		AC4E4ED71FA8DFEB0017E637 /* big.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = big.hpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +66,8 @@
 				AC4122D81FA8D487006D0D4A /* main.cpp */,
 				AC4122DF1FA8D4A7006D0D4A /* tribonacci.cpp */,
 				AC4122E01FA8D4A7006D0D4A /* tribonacci.hpp */,
+				AC4E4ED61FA8DFEB0017E637 /* big.cpp */,
+				AC4E4ED71FA8DFEB0017E637 /* big.hpp */,
 			);
 			path = tribonacci;
 			sourceTree = "<group>";
@@ -124,6 +129,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AC4E4ED81FA8DFEB0017E637 /* big.cpp in Sources */,
 				AC4122D91FA8D487006D0D4A /* main.cpp in Sources */,
 				AC4122E11FA8D4A7006D0D4A /* tribonacci.cpp in Sources */,
 			);
@@ -252,6 +258,7 @@
 				AC4122DE1FA8D487006D0D4A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -1,12 +1,13 @@
 //
-//  big_class.cpp
-//  big
+//  big.cpp
+//  tribonacci
 //
-//  Created by Alexandre Maraval on 06.10.17.
+//  Created by Alexandre Maraval on 31.10.17.
 //  Copyright © 2017 Alexandre Maraval. All rights reserved.
 //
 
-#include "big_class.hpp"
+#include "big.hpp"
+#include "big.hpp"
 // ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 // ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 // ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
@@ -456,15 +457,15 @@ bigint &bigint::operator*=(const bigint &b)
 bool bigint::operator==(const int &n) const
 {
     return (*this == bigint(std::to_string(n)));
-//    std::string _n = std::to_string(n);
-//    
-//    if(_number.size() == _n.size())
-//    {
-//        int i = 0;
-//        while(_number[i] == std::to_string(n)[i] and i < _number.size()) { i++; }
-//        return(i == _number.size());
-//    }
-//    return false;
+    //    std::string _n = std::to_string(n);
+    //
+    //    if(_number.size() == _n.size())
+    //    {
+    //        int i = 0;
+    //        while(_number[i] == std::to_string(n)[i] and i < _number.size()) { i++; }
+    //        return(i == _number.size());
+    //    }
+    //    return false;
 }
 
 bool bigint::operator!=(const int &n) const
@@ -476,15 +477,15 @@ bool bigint::operator!=(const int &n) const
 bool bigint::operator<(const int &n) const
 {
     return (*this < bigint(std::to_string(n)));
-//    std::string _n = std::to_string(n);
-//    if(_number.size() < std::to_string(n).size()) { return true; }                                  // if string length of this is smaller, number is clearly smaller
-//    else if(_number.size() == std::to_string(n).size())                                             // if both strings have same length,
-//    {
-//        int i = 0;
-//        while(_number[i] == std::to_string(n)[i] and i < _number.size()) { i++; }                   // compare each digit until a difference is found
-//        return(_number[i] < b._number[i]);                                                          // it will return the result of this logical test (a boolean
-//    }
-//    else { return false; }
+    //    std::string _n = std::to_string(n);
+    //    if(_number.size() < std::to_string(n).size()) { return true; }                                  // if string length of this is smaller, number is clearly smaller
+    //    else if(_number.size() == std::to_string(n).size())                                             // if both strings have same length,
+    //    {
+    //        int i = 0;
+    //        while(_number[i] == std::to_string(n)[i] and i < _number.size()) { i++; }                   // compare each digit until a difference is found
+    //        return(_number[i] < b._number[i]);                                                          // it will return the result of this logical test (a boolean
+    //    }
+    //    else { return false; }
 }
 
 
