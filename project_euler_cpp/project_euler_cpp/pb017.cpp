@@ -83,6 +83,6 @@ void pb017()
         std::cout << W[W.size()-1] << std::endl;
         TL += leng;
     }
-    std::cout << "Total length = " << TL << std::endl;
+    std::cout << "PB017 : number of characters of all numbers from 1 to 1000 = " << TL << std::endl;
 }
 // nine hundred and ninety eight
