@@ -22,8 +22,10 @@
 #include "pb014.hpp"
 #include "pb015.hpp"
 #include "pb016.hpp"
+#include "pb017.hpp"
 #include "pb137.hpp"
 #include "pb201.hpp"
+using namespace std;
 
 int main(int argc, const char * argv[]) {
     
@@ -42,55 +44,8 @@ int main(int argc, const char * argv[]) {
 //    pb013();
 //    pb014();
 //    pb015();
-    pb016();
-    
-//    // logical operators bigint with bigint
-//    bool operator==(const bigint &b) const;
-//    bool operator<(const bigint &b) const;
-//    bool operator>(const bigint &b) const;
-//    bool operator<=(const bigint &b) const;
-//    bool operator>=(const bigint &b) const;
-    
-    bigint a("2"), b("10");
-    std::cout << (bool) (a == b) << std::endl;
-    std::cout << (bool) (a < b) << std::endl;
-    std::cout << (bool) (a > b) << std::endl;
-    std::cout << (bool) (a <= b) << std::endl;
-    std::cout << (bool) (a >= b) << std::endl;
-    
-//    // arithmetic operators bigint with bigint
-//    bigint operator+(const bigint &b) const;
-//    bigint operator-(const bigint &b) const;
-//    bigint operator*(const bigint &b) const;
-//    bigint operator^(const bigint &b) const;
-    std::cout << a + b << std::endl;
-    std::cout << a - b << std::endl;
-    std::cout << a * b << std::endl;
-    std::cout << (bigint) (a^b) << std::endl;
-    
-    
-//    // unilateral operator
-//    bigint operator-() const;
-//    bigint operator+() const;
-    
-    
-//    // assignment and conversion
-//    bigint &operator= (const bigint &b);
-//    bigint &operator= (const std::string &s);
-//    bigint &operator++();
-//    bigint &operator--();
-//    bigint &operator+=(const bigint &b);
-//    bigint &operator-=(const bigint &b);
-//    bigint &operator*=(const bigint &b);
-    
-    
-//    // operators bigint with int
-//    bigint operator+(const int &n) const;
-//    bigint operator-(const int &n) const;
-//    bigint operator*(const int &n) const;
-    
-
-
+//    pb016();
+    pb017();
 //    pb137();
 //    pb201();
     
