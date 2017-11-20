@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AC53C0F61FC392DE006F94C5 /* pb067.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AC53C0F41FC392DE006F94C5 /* pb067.cpp */; };
 		AC6919DB1F69A9C600D781B8 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AC6919DA1F69A9C600D781B8 /* main.cpp */; };
 		AC7C0A2D1F7EDE8C001F4A40 /* pb001.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AC7C0A131F7EDE8C001F4A40 /* pb001.cpp */; };
 		AC7C0A2E1F7EDE8C001F4A40 /* pb002.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AC7C0A151F7EDE8C001F4A40 /* pb002.cpp */; };
@@ -43,6 +44,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		AC53C0F41FC392DE006F94C5 /* pb067.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = pb067.cpp; sourceTree = "<group>"; };
+		AC53C0F51FC392DE006F94C5 /* pb067.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = pb067.hpp; sourceTree = "<group>"; };
 		AC6919D71F69A9C600D781B8 /* project_euler_cpp */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = project_euler_cpp; sourceTree = BUILT_PRODUCTS_DIR; };
 		AC6919DA1F69A9C600D781B8 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		AC7C0A131F7EDE8C001F4A40 /* pb001.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = pb001.cpp; sourceTree = "<group>"; };
@@ -154,6 +157,8 @@
 				ACBC8A9A1FB33CD000E5B078 /* pb017.hpp */,
 				ACA64ACF1FC3315700AA825A /* pb018.cpp */,
 				ACA64AD01FC3315700AA825A /* pb018.hpp */,
+				AC53C0F41FC392DE006F94C5 /* pb067.cpp */,
+				AC53C0F51FC392DE006F94C5 /* pb067.hpp */,
 				ACF57AEF1F6B3298006C3527 /* pb137.cpp */,
 				ACF57AF01F6B3298006C3527 /* pb137.hpp */,
 				AC810BCA1F84E8F6008DEA8F /* pb201.cpp */,
@@ -220,6 +225,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				AC7C0A341F7EDE8C001F4A40 /* pb008.cpp in Sources */,
+				AC53C0F61FC392DE006F94C5 /* pb067.cpp in Sources */,
 				AC7C0A3C1F7EE160001F4A40 /* pb014.cpp in Sources */,
 				AC7C0A2F1F7EDE8C001F4A40 /* pb003.cpp in Sources */,
 				AC810BCC1F84E8F6008DEA8F /* pb201.cpp in Sources */,
