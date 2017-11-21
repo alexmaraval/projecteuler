@@ -10,5 +10,8 @@
 #define pb020_hpp
 
 #include <stdio.h>
+#include "pb016.hpp"
+
+void pb020();
 
 #endif /* pb020_hpp */

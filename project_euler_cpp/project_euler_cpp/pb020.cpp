@@ -7,3 +7,8 @@
 //
 
 #include "pb020.hpp"
+
+void pb020()
+{
+    bigint f = 100;
+}
