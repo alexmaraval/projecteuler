@@ -20,8 +20,8 @@ class tree {
     unsigned long _rows;
 public:
     tree(std::vector<std::vector< long int>>& t);
-     long int count_path();
-     long int max_path();
+    long int count_path();
+    long int max_path();
     void print();
 };
 void pb018();
