@@ -12,6 +12,7 @@
 #include <stdio.h>
 #include "pb016.hpp"
 
+bigint big_factorial(bigint &b);
 void pb020();
 
 #endif /* pb020_hpp */
