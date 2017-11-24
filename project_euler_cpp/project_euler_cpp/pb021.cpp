@@ -55,27 +55,13 @@ void amicable(std::vector<int> &ami, int min, int max)
 
 void pb021()
 {
-    std::vector<int> d;
-    int n = 6;
-    divisors(d, n);
-    std::cout << std::endl;
-    std::cout << "sum of divisors for " << n << " is " << sum_div(d) << std::endl;
-    std::cout << std::endl;
-    
-    n = 28;
-    divisors(d, n);
-    std::cout << std::endl;
-    std::cout << "sum of divisors for " << n << " is " << sum_div(d) << std::endl;
-    std::cout << std::endl;
-    
-    std::cout << "--------------------------" << std::endl;
     std::vector<int> ami;
     amicable(ami, 1,10000);
     
     int total_sum = 0;
     for(int i=0; i<ami.size(); i++)
     {
-        std::cout << ami[i] << " ";
+//        std::cout << ami[i] << " ";
         total_sum += ami[i];
     }
     std::cout << std::endl;
