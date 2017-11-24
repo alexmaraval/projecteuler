@@ -15,7 +15,7 @@
 
 void divisors(std::vector<int> &d,int n);
 int sum_div(std::vector<int> &d);
-void amicable(std::vector<int> &p, int min, int max);
+void amicable(std::vector<int> &ami, int min, int max);
 void pb021();
 
 #endif /* pb021_hpp */

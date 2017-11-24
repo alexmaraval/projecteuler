@@ -10,12 +10,12 @@
 // finds all the divisors of a positive integer and stores into a vecor
 void divisors(std::vector<int> &d,int n)
 {
+    d.clear();
     for(int i=1; i<n; i++)
     {
         if(n%i == 0)
         {
             d.push_back(i);
-            std::cout << i << " divides " << n << std::endl;
         }
     }
 }
@@ -32,28 +32,23 @@ int sum_div(std::vector<int> &d)
 
 // finds the divisors of all numbers between min and max, then sums them and list them in a 2D vector,
 // i.e. if we call (as in the exercise) d(n) the sum of the proper divisors of n, we store the pair (n, d(n)).
-void amicable(std::vector<std::vector<int>> &pair, int min, int max)
+void amicable(std::vector<int> &ami, int min, int max)
 {
-    pair.clear();
-    std::vector<int> r = {0};
-    pair.push_back(r);
-    pair[0].push_back(0);
-    
+    ami.clear();
     std::vector<int> div_list;
-    std::vector<int> p;
-    for(int i=0; i<max-min; i++)
+    std::vector<int> p(max-min);
+    
+    for(int i=min; i<=max; i++)
     {
         divisors(div_list, i);
-        p[i] = sum_div(div_list);
-        std::cout << p[i] << std::endl;
-        std::cout << std::endl;
+        p[i-min] = sum_div(div_list);
     }
-    for(int j=0; j<max-min; j++)
+    
+    for(int j=0; j<=max-min; j++)
     {
-        if(p[j] == j+min)
+        if(p[j] >= min and p[j] <= max and p[p[j]-min] == j+min and p[j] != j+min)
         {
-            pair[0][j] = j+min;
-            pair[1][j] = p[j];
+            ami.push_back(j+min);
         }
     }
 }
@@ -61,17 +56,29 @@ void amicable(std::vector<std::vector<int>> &pair, int min, int max)
 void pb021()
 {
     std::vector<int> d;
-    int n = 225;
+    int n = 6;
     divisors(d, n);
     std::cout << std::endl;
     std::cout << "sum of divisors for " << n << " is " << sum_div(d) << std::endl;
     std::cout << std::endl;
     
-    n = 284;
+    n = 28;
     divisors(d, n);
     std::cout << std::endl;
     std::cout << "sum of divisors for " << n << " is " << sum_div(d) << std::endl;
     std::cout << std::endl;
     
-//    amicable(1,10);
+    std::cout << "--------------------------" << std::endl;
+    std::vector<int> ami;
+    amicable(ami, 1,10000);
+    
+    int total_sum = 0;
+    for(int i=0; i<ami.size(); i++)
+    {
+        std::cout << ami[i] << " ";
+        total_sum += ami[i];
+    }
+    std::cout << std::endl;
+    std::cout << "PB021 : Sum of amicable numbers between 1 and 10000 is : " << total_sum << std::endl;
+
 }
