@@ -27,6 +27,7 @@
 #include "pb019.hpp"
 #include "pb020.hpp"
 #include "pb021.hpp"
+#include "pb022.hpp"
 #include "pb067.hpp"
 #include "pb137.hpp"
 #include "pb201.hpp"
@@ -54,7 +55,28 @@ int main(int argc, const char * argv[]) {
 //    pb018();
 //    pb019();
 //    pb020();
-    pb021();
+//    pb021();
+    pb022();
+    
+    std::ifstream file;
+    file.open("names.txt");
+    if (file.is_open())
+    {
+        std::string n;
+        int size = 0;
+        while(file >> n)
+        {
+            size++;
+        }
+        std::cout << size << std::endl;
+        std::string name_list[2];
+    }
+    else
+    {
+        std::cerr << "Unable to open names.txt \n";
+        exit(1);
+    }
+    
 //    pb067();
 //    pb137();
 //    pb201();

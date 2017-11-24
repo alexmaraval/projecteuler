@@ -12,5 +12,10 @@
 #include <stdio.h>
 #include <iostream>
 #include <fstream>
+#include <vector>
+#include <sstream>
+#include <string>
+
+void pb022();
 
 #endif /* pb022_hpp */
