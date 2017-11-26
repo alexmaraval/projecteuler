@@ -90,7 +90,6 @@
 		AC810BCE1F850C76008DEA8F /* pb015.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = pb015.hpp; sourceTree = "<group>"; };
 		AC810BD01F851E16008DEA8F /* pb016.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = pb016.cpp; sourceTree = "<group>"; };
 		AC810BD11F851E16008DEA8F /* pb016.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = pb016.hpp; sourceTree = "<group>"; };
-		AC8BB91D1FC83C120018A7B1 /* names2.in */ = {isa = PBXFileReference; lastKnownFileType = text; path = names2.in; sourceTree = "<group>"; };
 		ACA64ACF1FC3315700AA825A /* pb018.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = pb018.cpp; sourceTree = "<group>"; };
 		ACA64AD01FC3315700AA825A /* pb018.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = pb018.hpp; sourceTree = "<group>"; };
 		ACBC8A991FB33CD000E5B078 /* pb017.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = pb017.cpp; sourceTree = "<group>"; };
@@ -184,7 +183,6 @@
 				ACF57AF01F6B3298006C3527 /* pb137.hpp */,
 				AC810BCA1F84E8F6008DEA8F /* pb201.cpp */,
 				AC810BCB1F84E8F6008DEA8F /* pb201.hpp */,
-				AC8BB91D1FC83C120018A7B1 /* names2.in */,
 			);
 			path = project_euler_cpp;
 			sourceTree = "<group>";

@@ -57,26 +57,6 @@ int main(int argc, const char * argv[]) {
 //    pb020();
 //    pb021();
     pb022();
-    
-    std::ifstream file;
-    file.open("names.txt");
-    if (file.is_open())
-    {
-        std::string n;
-        int size = 0;
-        while(file >> n)
-        {
-            size++;
-        }
-        std::cout << size << std::endl;
-        std::string name_list[2];
-    }
-    else
-    {
-        std::cerr << "Unable to open names.txt \n";
-        exit(1);
-    }
-    
 //    pb067();
 //    pb137();
 //    pb201();
