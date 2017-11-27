@@ -12,6 +12,7 @@
 #include <stdio.h>
 #include <iostream>
 #include <vector>
+#include <math.h>
 
 void divisors(std::vector<int> &d,int n);
 int sum_div(std::vector<int> &d);
