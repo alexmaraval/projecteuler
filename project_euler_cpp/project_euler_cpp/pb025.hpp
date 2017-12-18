@@ -10,5 +10,11 @@
 #define pb025_hpp
 
 #include <stdio.h>
+#include <iostream>
+#include "pb002.hpp"
+#include "pb016.hpp"
+#include <string>
+
+void pb025();
 
 #endif /* pb025_hpp */
